@@ -1,3 +1,9 @@
+mountall (2.36.4-zfs2a) precise; urgency=low
+
+  * Adding sorting to zfs list 
+
+ -- Jan Riechers <de@r-jan.de>  Sun, 05 May 2013 13:19:47 +0200
+
 mountall (2.36.4-zfs2) precise; urgency=low
 
   * Fix upstream-tag typo in gbp.conf file.

@@ -1,0 +1,25 @@
+From 9478f2a10766ccc19740629d31597a5941db4972 Mon Sep 17 00:00:00 2001
+From: Der-Jan <de@r-jan.de>
+Date: Sun, 5 May 2013 13:20:29 +0200
+Subject: [PATCH] Added sorting option to zfs list
+
+---
+ src/mountall.c |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/mountall.c b/src/mountall.c
+index b8c2dca..7018804 100644
+--- a/src/mountall.c
++++ b/src/mountall.c
+@@ -763,7 +763,7 @@ parse_zfs_list (void)
+ 	size_t bufsz = 4096;
+ 	FILE *zfs_stream;
+ 	const char zfs_command[] =
+-	  "/sbin/zfs list -H -t filesystem -o name,mountpoint,canmount,readonly,atime";
++	  "/sbin/zfs list -H -t filesystem -o name,mountpoint,canmount,readonly,atime -s mountpoint";
+ 	int zfs_result;
+ 
+ 	nih_debug ("parsing ZFS list");
+-- 
+1.7.9.5
+
