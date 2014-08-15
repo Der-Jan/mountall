@@ -1,3 +1,9 @@
+Description: ZFS list sort by mountpoint
+ Commit https://github.com/zfsonlinux/mountall/commits/2abcd09cf98b9770a9d8bde8d14a091996452d35 claims to fix endless loop, but without sorting by mountpoint mountall will never finish for my dataset.
+Author: Jan Riechers <de@r-jan.de>
+Bug: https://github.com/zfsonlinux/mountall/pull/1
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
 Index: zol-mountall-git/src/mountall.c
 ===================================================================
 --- zol-mountall-git.orig/src/mountall.c	2014-08-15 08:43:01.075995040 +0000
