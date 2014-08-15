@@ -3,3 +3,4 @@
 0003-readonly-and-atime-options-reflected-during-mount.patch
 0004-no-filesystem-should-depend-on-mounting-swap-first.patch
 0005-Handle-duplicate-mountpoints.patch
+0006-ZFS-list-sort.patch

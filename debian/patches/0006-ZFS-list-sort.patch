@@ -1,0 +1,13 @@
+Index: zol-mountall-git/src/mountall.c
+===================================================================
+--- zol-mountall-git.orig/src/mountall.c	2014-08-15 08:43:01.075995040 +0000
++++ zol-mountall-git/src/mountall.c	2014-08-15 08:43:22.083797095 +0000
+@@ -784,7 +784,7 @@
+ 	size_t bufsz = 4096;
+ 	FILE *zfs_stream;
+ 	const char zfs_command[] =
+-	  "/sbin/zfs list -H -t filesystem -o name,mountpoint,canmount,readonly,atime";
++	  "/sbin/zfs list -H -t filesystem -o name,mountpoint,canmount,readonly,atime -s mountpoint";
+ 	int zfs_result;
+ 
+ 	nih_debug ("parsing ZFS list");
